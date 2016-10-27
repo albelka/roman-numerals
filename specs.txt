@@ -1,4 +1,4 @@
-0. the program should convert 1 to I and push I's up to 3 I's
+0. the program should convert 1 to I and push I's up to 3 I's.
 
 
 

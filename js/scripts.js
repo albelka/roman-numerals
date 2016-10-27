@@ -1,3 +1,6 @@
+// var reverseString = number.split("").reverse().join("");
+
+
 function separateNumberIntoUnits(number) {
   if (number == 0) return [0];
 
@@ -19,18 +22,27 @@ function separateNumberIntoUnits(number) {
 function toNumeral(number){
   var numberArray = [1,5,10,50,100,500,1000];
   var romanNumeralArray = ['I','V','X','L','C','D','M'];
-  var inputArray = [];//seperateNumberIntoUnits(number);
-console.log(inputArray);
+  var inputArray = [];
+  // var numString = number.toString();
+  //seperateNumberIntoUnits(number);
   for(var i = 0; i < number ; i++){
     if(number < 4){
       inputArray.push("I");
-    } else if (number = 4){
+    } else if (number === 4){
       inputArray.push("IV");
-      break;
-   }
- }
-return inputArray;
-};// function end
+      i = number;
+   } else if (number === 5) {
+      inputArray.push("V");
+      i = number;
+    }else if(number < 9){
+      inputArray.push("V") + inputArray.push("I".repeat(number-5)); console.log(inputArray);
+      i= number;
+    } else if (number = 9) {
+      inputArray.push("IX");
+    }  return inputArray;
+  }
+  };
+
 
 
 
