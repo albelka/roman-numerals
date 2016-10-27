@@ -1,0 +1,19 @@
+1. The program should convert 1 to I 5 to V 10 to X 50 to L 100 to C 500 to D and 1000 to M
+  in: 10
+  out: X
+
+2. The program should add the values of all the symbols
+  in: 3
+  out: III
+
+3. The program should separate the ones tens hundreds and thousands.
+  in: 333
+  out: 300 30 3
+
+4. The program should subtract if any digit has more than three characters in a row
+  in: IIII
+  out: IV
+
+5. If the number is less than zero or greater than 3999 the program should print "Roman numbers must be between 0 and 3999"
+  in: 5000
+  out: string
