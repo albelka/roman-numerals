@@ -1,22 +1,22 @@
 // var num = 0;
-
-var mapToPlaces = function(number) {
-  var romanNumeralArray = ['I','V','X','L','C','D','M'];
-  var reverseArray = number.toString().split("").reverse();
-  for (var i = 0; i < reverseArray.length; i++){
-    if (reverseArray.length === 1){
-      var result = toNumeral(number);
-        // console.log(reverseArray);
-        // break
-    // } else if (reverseArray.length === 2){
-    //   if (reverseArray[i] ===1){
-    //     reverseArray[i]==="C";
-    //   } console.log(reverseArray);
-   }
-  }// for end
-  // num = number;
-  return result;
-}// fun end
+//
+// var mapToPlaces = function(number) {
+//   // var romanNumeralArray = ['I','V','X','L','C','D','M'];
+//   var Array1 = number.toString().split("");
+//   // for (var i = 0; i < Array1.length; i++){
+//     if (Array1.length === 1){
+//       var result = toNumeral(number);
+//
+//     } else if (Array1.length === 2){
+//       var preResult = toNumeral(Array1[0]);
+//       if (preResult === "I"){
+//       var newResult = "C";
+//     } console.log("result=" + newResult);
+//    }
+//   // }// for end
+//   // num = number;
+//   return result;
+// }// fun end
 
 
 //
@@ -44,7 +44,7 @@ function toNumeral(number){
   var inputArray = [];
   // var numString = number.toString();
   //seperateNumberIntoUnits(number);
-  for(var i = 0; i < number ; i++){
+  for(var i = 0; i < number; i++){
     if(number < 4){
       inputArray.push("I");
     } else if (number === 4){
@@ -58,12 +58,12 @@ function toNumeral(number){
       i= number;
     } else if (number = 9) {
       inputArray.push("IX");
+      i=number;
     }
     console.log("inputArray:" + inputArray);
-    return inputArray;
   }
+  return inputArray.join('');
   };
-
 
 
 
@@ -75,7 +75,7 @@ $(document).ready(function(){
 
   var number = parseInt($("input#number").val());
   // var result = $();
-  var result = mapToPlaces(number);
+  var result = toNumeral(number);
     $("#result").text(result);
   });
 });
