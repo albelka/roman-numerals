@@ -1,3 +1,7 @@
+0. the program should convert 1 to I and push I's up to 3 I's
+
+
+
 1. The program should convert 1 to I 5 to V 10 to X 50 to L 100 to C 500 to D and 1000 to M
   in: 10
   out: X
